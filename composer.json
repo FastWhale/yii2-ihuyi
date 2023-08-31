@@ -1,13 +1,13 @@
 {
-    "name": "dovechen/yii2-ihuyi",
+    "name": "fastwhale/yii2-ihuyi",
     "description": "Yii2 ihuyi sms SDK",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","ihuyi","yii2-ihuyi", "sms", "短信", "互亿无线"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Dove Chen",
-            "email": "pacifist888@163.com"
+            "name": "fastwhale",
+            "email": "op@mail.pigcms.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dovechen\\yii2\\ihuyi\\": ""
+            "fastwhale\\yii2\\ihuyi\\": ""
         }
     }
 }

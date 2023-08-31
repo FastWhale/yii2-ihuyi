@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist dovechen/yii2-ihuyi "*"
+php composer.phar require --prefer-dist fastwhale/yii2-ihuyi "*"
 ```
 
 or add
 
 ```
-"dovechen/yii2-ihuyi": "*"
+"fastwhale/yii2-ihuyi": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -31,7 +31,7 @@ return [
     //....
     'components' => [
         'ihuyi' => [
-            'class' => 'dovechen\yii2\ihuyi\Ihuyi',
+            'class' => 'fastwhale\yii2\ihuyi\Ihuyi',
             // normal sms.
             'sms'  => [
                 'appid'  => '',

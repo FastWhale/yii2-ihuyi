@@ -1,19 +1,19 @@
 <?php
 
-	namespace dovechen\yii2\ihuyi;
+	namespace fastwhale\yii2\ihuyi;
 
-	use dovechen\yii2\ihuyi\components\BaseIhuyi;
-	use dovechen\yii2\ihuyi\src\gateways\InternationalGateway;
-	use dovechen\yii2\ihuyi\src\gateways\MarketingGateway;
-	use dovechen\yii2\ihuyi\src\gateways\MmsGateway;
-	use dovechen\yii2\ihuyi\src\gateways\SmsGateway;
-	use dovechen\yii2\ihuyi\src\gateways\VoiceGateway;
-	use dovechen\yii2\ihuyi\src\gateways\VoiceNoticeGateway;
+	use fastwhale\yii2\ihuyi\components\BaseIhuyi;
+	use fastwhale\yii2\ihuyi\src\gateways\InternationalGateway;
+	use fastwhale\yii2\ihuyi\src\gateways\MarketingGateway;
+	use fastwhale\yii2\ihuyi\src\gateways\MmsGateway;
+	use fastwhale\yii2\ihuyi\src\gateways\SmsGateway;
+	use fastwhale\yii2\ihuyi\src\gateways\VoiceGateway;
+	use fastwhale\yii2\ihuyi\src\gateways\VoiceNoticeGateway;
 	use yii\base\InvalidConfigException;
 
 	/**
 	 * Class Ihuyi
-	 * @package dovechen\yii2\ihuyi
+	 * @package fastwhale\yii2\ihuyi
 	 */
 	class Ihuyi extends BaseIhuyi
 	{
@@ -223,7 +223,7 @@
 		public function getSms ()
 		{
 			if ($this->_sms === NULL) {
-				$this->_sms = \Yii::createObject('dovechen\yii2\ihuyi\src\gateways\SmsGateway', [$this]);
+				$this->_sms = \Yii::createObject('fastwhale\yii2\ihuyi\src\gateways\SmsGateway', [$this]);
 			}
 
 			return $this->_sms;
@@ -239,7 +239,7 @@
 		public function getInternational ()
 		{
 			if ($this->_isms === NULL) {
-				$this->_isms = \Yii::createObject('dovechen\yii2\ihuyi\src\gateways\InternationalGateway', [$this]);
+				$this->_isms = \Yii::createObject('fastwhale\yii2\ihuyi\src\gateways\InternationalGateway', [$this]);
 			}
 
 			return $this->_isms;
@@ -255,7 +255,7 @@
 		public function getVoice ()
 		{
 			if ($this->_vsms === NULL) {
-				$this->_vsms = \Yii::createObject('dovechen\yii2\ihuyi\src\gateways\VoiceGateway', [$this]);
+				$this->_vsms = \Yii::createObject('fastwhale\yii2\ihuyi\src\gateways\VoiceGateway', [$this]);
 			}
 
 			return $this->_vsms;
@@ -271,7 +271,7 @@
 		public function getVoiceNotice ()
 		{
 			if ($this->_vnsms === NULL) {
-				$this->_vnsms = \Yii::createObject('dovechen\yii2\ihuyi\src\gateways\VoiceNoticeGateway', [$this]);
+				$this->_vnsms = \Yii::createObject('fastwhale\yii2\ihuyi\src\gateways\VoiceNoticeGateway', [$this]);
 			}
 
 			return $this->_vsms;
@@ -287,7 +287,7 @@
 		public function getMarketing ()
 		{
 			if ($this->_marketing === NULL) {
-				$this->_marketing = \Yii::createObject('dovechen\yii2\ihuyi\src\gateways\MarketingGateway', [$this]);
+				$this->_marketing = \Yii::createObject('fastwhale\yii2\ihuyi\src\gateways\MarketingGateway', [$this]);
 			}
 
 			return $this->_marketing;
@@ -302,7 +302,7 @@
 		public function getMms ()
 		{
 			if ($this->_mms === NULL) {
-				$this->mms = \Yii::createObject('dovechen\yii2\ihuyi\src\gateways\MmsGateway', [$this]);
+				$this->mms = \Yii::createObject('fastwhale\yii2\ihuyi\src\gateways\MmsGateway', [$this]);
 			}
 
 			return $this->_mms;

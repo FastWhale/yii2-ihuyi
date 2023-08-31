@@ -1,12 +1,12 @@
 <?php
 
-	namespace dovechen\yii2\ihuyi\components;
+	namespace fastwhale\yii2\ihuyi\components;
 
 	use yii\base\Component;
 
 	/**
 	 * Class BaseIhuyi
-	 * @package dovechen\yii2\ihuyi\component
+	 * @package fastwhale\yii2\ihuyi\component
 	 */
 	abstract class BaseIhuyi extends Component
 	{

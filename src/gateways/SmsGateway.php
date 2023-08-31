@@ -1,14 +1,14 @@
 <?php
 
-	namespace dovechen\yii2\ihuyi\src\gateways;
+	namespace fastwhale\yii2\ihuyi\src\gateways;
 
 	use app\components\InvalidParameterException;
-	use dovechen\yii2\ihuyi\components\IhuyiComponent;
+	use fastwhale\yii2\ihuyi\components\IhuyiComponent;
 	use yii\base\InvalidConfigException;
 
 	/**
 	 * Class SmsGateway
-	 * @package dovechen\yii2\ihuyi\src\gateways
+	 * @package fastwhale\yii2\ihuyi\src\gateways
 	 */
 	class SmsGateway extends IhuyiComponent
 	{
